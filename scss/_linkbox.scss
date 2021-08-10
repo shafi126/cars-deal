@@ -1,0 +1,59 @@
+//  i used div create the "learn more" link in 3 sections and i didn't use the button element,
+@import "./font-family";
+
+.link {
+  border: 0px solid white;
+  border-radius: 30px;
+  background:$paragraph-color;
+}
+.link {
+  height: 40px;
+  width: 6.875rem;
+  margin-left: 2rem;
+  padding-top: 0.625rem;
+  margin-top: 4rem;
+}
+.link:hover {
+  border: 2px solid $paragraph-color;
+  padding-top: 0.520rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: $secondary-font-fmaily;
+  font-size: 0.975rem;
+}
+.link-1 {
+  color: $Brightorange;
+
+  &:hover {
+    color: $paragraph-color;
+  }
+}
+
+.link-2 {
+  color: $Darkcyan;
+
+  &:hover {
+    color: $paragraph-color;
+  }
+}
+.link-3 {
+  color: $Verydarkcyan;
+
+  &:hover {
+    color: $paragraph-color;
+  }  
+}
+.link-box-1:hover {
+  background: $Brightorange;
+  transition: 500ms;
+}
+.link-box-2:hover {
+  background: $Darkcyan;
+transition: 500ms;
+}
+.link-box-3:hover {
+  background: $Verydarkcyan;
+  transition: 500ms;
+}

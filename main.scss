@@ -1,0 +1,81 @@
+@import "./scss/fonts";
+@import "./scss/color";
+@import "./scss/linkbox";
+@import "./scss/box-strucure";
+@import "./scss/font-family";
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background: $paragraph-color;
+
+  & .layout {
+    @extend main;
+  }
+}
+.layout {
+  width: 18.75rem;
+  height: 25rem;
+}
+.layout {
+  padding-top: 5.375rem;
+  padding-bottom: 4.125rem;
+  padding-left: 8.125rem;
+  padding-right: 8.125rem;
+  background: $paragraph-color;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  position: relative;
+}
+.box1 {
+  background: $Brightorange;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.box2 {
+  background: $Darkcyan;
+}
+.box3 {
+  background: $Verydarkcyan;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    background:$paragraph-color;
+    width: 100vw;
+    height: 100%;
+  }
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .structure-box {
+    max-width: 20.75rem;
+  }
+  .box1 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .box3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .attribution {
+    display: flex;
+    flex-direction: column;
+  }
+}
