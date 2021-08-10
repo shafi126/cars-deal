@@ -1,0 +1,52 @@
+// structure and paddings of 3 sections and done here
+@import "./font-family";
+
+.structure-box {
+  min-width: 15.625rem;
+  max-width: 18.125rem;
+  min-height: 27.5rem;
+  position: relative;
+}
+
+img {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 1.45rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+
+  &:hover {
+    padding-left: 10rem;
+    transition: 300ms;
+  }
+}
+
+.box-heading {
+  padding-left: 2rem;
+  padding-right: 4rem;
+
+  // main heading and paragraph style
+
+  & h1 {
+    text-align: left;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding-bottom: 1.225rem;
+  }
+
+  & h1 {
+    font-family: $secondary-font-fmaily;
+    color: $heading-button;
+  }
+
+  p {
+    text-align: left;
+    font-size: 0.785rem;
+    margin-bottom: 1.2rem;
+    line-height: 25px;
+  }
+  p {
+    font-family: $primary-font-family;
+    color: $paragraph-color;
+  }
+}
